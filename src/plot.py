@@ -79,6 +79,7 @@ def get_top_10_neighborhoods_and_room_type(df, top_10_neighborhood_lst):
 
     return df_top_10_neighborhoods_and_room_type
 
+
 def plot_top_10_neighborhoods_and_room_type(df_top_10_neighborhoods_and_room_type, city):
     '''
     Saves bar chart image featuring top 10 neighborhoods by room type
@@ -103,8 +104,23 @@ def plot_top_10_neighborhoods_and_room_type(df_top_10_neighborhoods_and_room_typ
     # plt.savefig('most-available-airbnb-listings-in-{city}-by-room-type.jpeg')
     # plt.show()
 
+def get_single_neighborhood_with_most_listings_entire_home_apt(df,df_top_10_neighborhoods,room_type='Entire home/apt'):
+    '''
+    DOC STRING GOES HERE
 
-    
+    ARGS
+        
+
+    RETURN
+
+    '''
+    df_number_one_neighborhood_entire_home_apt = pd.DataFrame()
+    neighborhood_with_most_listings = df_top_10_neighborhoods.loc[0,'neighbourhood_cleansed']
+    df_number_one_neighborhood_entire_home_apt = df[(df['neighbourhood_cleansed'] == neighborhood_with_most_listings) & 
+                                                        (df['room_type'] == room_type)]
+
+    return df_number_one_neighborhood_entire_home_apt
+
 if __name__ == '__main__':
     df = pd.read_pickle('../data/pickled_listings_df')
 
@@ -116,10 +132,24 @@ if __name__ == '__main__':
     # Creates list of top 10 neighborhoods
     top_10_neighborhood_lst = get_top_10_neighborhoods_list(df_top_10_neighborhoods)
 
-    # Plots the top 10 neighborhoods
+    # Plots and saves the top 10 neighborhoods
     plot_top_10_neighborhoods(df_top_10_neighborhoods, 'Denver')
 
-
+    # Creates df of the top 10 neighborhoods and room type
     df_top_10_neighborhoods_and_room_type = get_top_10_neighborhoods_and_room_type(df, top_10_neighborhood_lst)
-
+    
+    # Plots and saves the top 10 neighborhoods and room type
     plot_top_10_neighborhoods_and_room_type(df_top_10_neighborhoods_and_room_type, 'Denver')
+
+    # Creates df of the number 1, most listed neighborhood on Airbnb that lists their entire home
+    df_number_one_neighborhood_entire_home_apt = get_single_neighborhood_with_most_listings_entire_home_apt(df,df_top_10_neighborhoods,room_type='Entire home/apt')
+
+    # '''
+    # DOC STRING GOES HERE
+
+    # ARGS
+        
+
+    # RETURN
+
+    # '''
