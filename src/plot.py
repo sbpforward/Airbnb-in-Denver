@@ -121,6 +121,21 @@ def get_single_neighborhood_with_most_listings_entire_home_apt(df,df_top_10_neig
 
     return df_number_one_neighborhood_entire_home_apt
 
+def get_single_neighborhood_with_most_listings_to_list(df_number_one_neighborhood_entire_home_apt):
+    '''
+    Creates a list of integers of the listing ID of the number one neighorhood that rents out the entire home/apt
+
+    ARGS
+        df - pd.dataFrame
+
+    RETURN
+        str
+    '''
+    single_neighborhood_with_most_listings_lst = df_number_one_neighborhood_entire_home_apt['id'].tolist()
+
+    return single_neighborhood_with_most_listings_lst
+
+
 if __name__ == '__main__':
     df = pd.read_pickle('../data/pickled_listings_df')
 
@@ -141,15 +156,9 @@ if __name__ == '__main__':
     # Plots and saves the top 10 neighborhoods and room type
     plot_top_10_neighborhoods_and_room_type(df_top_10_neighborhoods_and_room_type, 'Denver')
 
-    # Creates df of the number 1, most listed neighborhood on Airbnb that lists their entire home
+    # Creates df of the number 1, most listed neighborhood on Airbnb that lists the entire home
     df_number_one_neighborhood_entire_home_apt = get_single_neighborhood_with_most_listings_entire_home_apt(df,df_top_10_neighborhoods,room_type='Entire home/apt')
 
-    # '''
-    # DOC STRING GOES HERE
-
-    # ARGS
-        
-
-    # RETURN
-
-    # '''
+    # Creates list of the number one neighborhood with most listings that offer the entire home
+    single_neighborhood_with_most_listings_lst = get_single_neighborhood_with_most_listings_to_list(df_number_one_neighborhood_entire_home_apt)
+    
