@@ -5,14 +5,16 @@ import seaborn as sns
 
 def get_top_10_neighborhoods(df):
     '''
-    Groups neighborhoods and room types, then counts the number of room types and adds it to a new column called "count".
-    Returns the sum of the number of room types for each neighborhood and puts them in descending order.
+    Groups neighborhoods and room types, then counts the number 
+    of room types and adds it to a new column called "count".
+    Returns the sum of the number of room types for each neighborhood 
+    and puts them in descending order.
 
     ARGS
         df - pd.dataFrame
 
     RETURN
-        df
+        df - pd.dataFrame
     '''
     df_top_10_neighborhoods = pd.DataFrame()
 
@@ -27,10 +29,10 @@ def get_top_10_neighborhoods_list(df_top_10_neighborhoods):
     Creates a list of strings of the top 10 neighborhoods
 
     ARGS
-    df - df_top_10_neighborhoods
+        df - pd.dataFrame
 
     RETURN
-    list
+        list
     '''
     top_10_neighborhood_lst = df_top_10_neighborhoods['neighbourhood_cleansed'].tolist()
 
@@ -38,32 +40,34 @@ def get_top_10_neighborhoods_list(df_top_10_neighborhoods):
 
 def plot_top_10_neighborhoods(df_top_10_neighborhoods, city):
     '''
-    Plots the city's top 10 neighborhoods with the most listings
+    Saves bar chart image of the city's top 10 neighborhoods with the most Airbnb listings
 
     ARGS
         df - pd.dataFrame
         city - str 
 
     RETURN
-        plot in jpeg
+        plot - jpeg
     '''
     ax = df_top_10_neighborhoods.plot.bar(x='neighbourhood_cleansed', y='count', rot=45, figsize=(10, 6), legend=False)
     ax.set_xlabel("Neighborhood", fontsize=14)
     ax.set_ylabel("# of Total Listings", fontsize=14)
     plt.title(f'Top 10 {city} Neighborhoods with Most Available Airbnb Listings', fontsize=20)
     plt.tight_layout()
-    #plt.savefig(f'top-10-neighborhoods-in-{city}-with-most-airbnb-listings.jpeg')
-    plt.show()
+    # plt.savefig(f'top-10-neighborhoods-in-{city}-with-most-airbnb-listings.jpeg')
+    # plt.show()
 
 def get_top_10_neighborhoods_and_room_type(df, top_10_neighborhood_lst):
     '''
-    DOC STRING GOES
-
+    Groups neighborhoods and room types, then counts the number of 
+    room types and adds it to a new column called "count"
+    
     ARGS
-
+        df - pd.dataFrame
+        list - list of strings
 
     RETURN
-
+        df - pd.dataFrame
     '''
     df_top_10_neighborhoods_and_room_type = pd.DataFrame()
     
@@ -77,13 +81,14 @@ def get_top_10_neighborhoods_and_room_type(df, top_10_neighborhood_lst):
 
 def plot_top_10_neighborhoods_and_room_type(df_top_10_neighborhoods_and_room_type, city):
     '''
-    UPDATE DOC STRING
+    Saves bar chart image featuring top 10 neighborhoods by room type
 
     ARGS
-
+        df - pd.dataFrame
+        city - string
 
     RETURN
-
+        plot - jpeg
     '''
     plt.figure(figsize=(12, 6))
 
@@ -95,8 +100,8 @@ def plot_top_10_neighborhoods_and_room_type(df_top_10_neighborhoods_and_room_typ
     plt.legend(loc=1, prop={'size': 14})
 
     plt.tight_layout()
-    #plt.savefig('most-available-airbnb-listings-in-{city}-by-room-type.jpeg')
-    plt.show()
+    # plt.savefig('most-available-airbnb-listings-in-{city}-by-room-type.jpeg')
+    # plt.show()
 
 
     
