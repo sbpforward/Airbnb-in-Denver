@@ -9,7 +9,7 @@ def select_cols(df, cols):
     ----------
     df: pandas.DataFrame
         DataFrame produced by the calendar.csv file.
-    cols: array_like
+    cols: list
         List of columns to keep
         =============
         listing_id
@@ -39,7 +39,7 @@ def to_datetime(df, cols):
         The DataFrame that was recently passed through and updated to have
         the necessary columns.
 
-    cols: array_like
+    cols: list
         List of the column name that needs to be converted to datetime.
         =============
         date
@@ -66,7 +66,7 @@ def update_col_name(df,cols):
     df: pandas.DataFrame
         Passes in the DataFrame that has the designated columns and updated
         'date' datatype.  
-    new_col: array_like
+    new_col: list
         A list of strings with the desired new column variables.
         =============
         id

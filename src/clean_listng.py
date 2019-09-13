@@ -9,7 +9,7 @@ def select_cols(df, cols):
     ----------
     df: pandas.DataFrame
         DataFrame produced by the listings.csv file.
-    cols: array_like
+    cols: list
         List of columns to keep
         =============
         id                          latitude                    space
@@ -48,7 +48,7 @@ def to_float(df, cols):
         Passes the DataFrame that was recently updated to have the
         desired columns.
 
-    cols: array_like
+    cols: list
         List of strings of the column names that need to be 
         converted to float.
         =============
