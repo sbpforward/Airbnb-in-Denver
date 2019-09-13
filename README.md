@@ -99,11 +99,11 @@ Data Visualization + Discovery
 ------
 I wanted to see what neighborhood in Denver had the most Airbnb listings to choose from. In Denver, that's Five Points. 
  
-![alt text](images/top-10-neighborhoods-in-Denver-with-most-airbnb-listings.jpeg "Top 10 Denver Neighborhoods with the Most Airbnb Listings)
+![alt text](/images/top-10-neighborhoods-in-Denver-with-most-airbnb-listings.jpeg "Top 10 Denver Neighborhoods with the Most Airbnb Listings")
 
 My next question was: "Of these neighborhoods, what are the room types that are listed?"
 
-![alt text](images/most-available-airbnb-listings-in-{city}-by-room-type.jpeg "Most Available Neighbourhoods in Denver & Room Type)
+![alt text](images/most-available-airbnb-listings-in-{city}-by-room-type.jpeg "Most Available Neighbourhoods in Denver & Room Type")
 
 Future Directions
 ------
