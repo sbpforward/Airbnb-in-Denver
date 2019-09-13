@@ -40,9 +40,9 @@ Describing the Data
 You can find the data for Denver and other cities on [Inside Airbnb](http://insideairbnb.com/get-the-data.html). It appears to be updated every month or so. Data from previous months are archived and linked below the city's current shared data sets.
 
 I downloaded the follow three .CSV fles:
-    * Listings
-    * Calendar
-    * Reviews
+    + Listings
+    + Calendar
+    + Reviews
 
 Exploration highlighted:
     * Listings
