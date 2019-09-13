@@ -117,24 +117,31 @@ I started to pull all of the information on "entire home/apt" listings in Five P
 + Licensee must list the unit’s STR license number on any online, print or other advertisements.
 + Accessory dwelling units (ADUs) can be used for STRs, but only one STR license can be granted per Primary Resident's property.
 
-After combing through the calendar.CSV looking to see what columns to keep, I came across a listing that has a maximum night availability of 1125 days. That's a little over 3 years.
+___
+
+After combing through the calendar.CSV looking to see what columns to keep and update before merging into the listing.CSV, I came across a listing that has a maximum night availability of 1125 days. That's a little over 3 years.
 
 ![alt text](/images/discovery_1488774_two_listings_doesn't_live_here.png "calendar discovery")
 
-Say "Hello!" to Heidi. She has [two Airbnb listings](airbnb.com/users/show/7961490) in Denver, one in Whittier and the other in Five Points, that she rents out while hanging out in Pendleton, Indiana.
+Say "Hello!" to Heidi. I think she's new here. She has [two Airbnb listings](airbnb.com/users/show/7961490) in Denver, one in Whittier and the other in Five Points, that she rents from good ol' Pendleton, Indiana.
 
 ![alt text](images/airbnb_host_heidi.png "Hello Heidi!")
 
-
-
-
-
 Future Directions
 ------
-Ow now brown cow.
+I'm fully invested in finding out how to weed out the Airbnb hosts who are violating Denver's short-term rental agreement. Some things I need to consider are:
++ Making sure the listing is within the City and Count of Denver. I've come across a few listings in Lakewood and other areas that are not within Denver City Limits.
++ Finding out how likely an entire home/apt is to be violating the law. Just becuase a person is listing out their entire home does not mean they're not actually living there. Like [Julie](https://www.airbnb.com/users/show/1496) who offers a room in her house while also having the option to rent the *whole* house. 
++ When running through the "license" column, double checking to see if they've entered their license number in another description on their listing. Like I did at first. Whoops.
 
 References
 ------
-Carville, Olivia. (2019, March) *Meet Murray Cox, The Man Trying to Take Down Airbnb.* https://www.bloomberg.com/news/articles/2019-05-23/meet-murray-cox-airbnb-s-public-enemy-no-1-in-new-york
+
+Carville, Olivia. (2019, March). *Meet Murray Cox, The Man Trying to Take Down Airbnb.* https://www.bloomberg.com/news/articles/2019-05-23/meet-murray-cox-airbnb-s-public-enemy-no-1-in-new-york
+
+Denver's Short-Term Rental Regulations & Licensing
+https://www.denvergov.org/content/denvergov/en/denver-business-licensing-center/business-licenses/short-term-rentals/short-term-rental-faq.html
+
+Issac, Mike. (2015, December). *Airbnb Releases Trove of New York City Home-Sharing Data* https://www.nytimes.com/2015/12/02/technology/airbnb-releases-trove-of-new-york-city-home-sharing-data.html?module=inline
 
 Katz, Miranda. (2018, February). *A Lone Data Whiz Is Fighting Airbnb — and Winning.* https://www.wired.com/2017/02/a-lone-data-whiz-is-fighting-airbnb-and-winning/
