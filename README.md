@@ -37,7 +37,62 @@ Cox and another collaborator, Tom Slee, compiled [a comprehensive report](http:/
 
 Describing the Data
 ------
-Ow now brown cow.
+You can find the data for Denver and other cities on [Inside Airbnb](http://insideairbnb.com/get-the-data.html). It appears to be updated every month or so. Data from previous months are archived and linked below the city's current shared data sets.
+
+I downloaded the follow three .CSV fles:
+    * Listings
+    * Calendar
+    * Reviews
+
+Exploration highlighted:
+    * Listings
+        * There are 4,511 total Airbnb listings in Denver across 78 neighbourhoods.
+            * 73% - Entire Home/Apt
+            * 25% - Private rooms
+            * 2%  - Shared rooms
+        * There's a designated section where hosts are to enter their license number. This is when I realized I put our license number in the wrong spot and quickly fixed our listings.
+        * A "neighbourhood_cleansed" column correctly converts the listing's neighbourhood to be representative of the city's neighbourhood boundaries.
+            * LoDo (Lower Downtown) -> Union Station
+            * RiNo (River North)    -> Five Points
+        * Property types could be:
+            * Guesthouse
+            * Loft 
+            * House
+            * Apartment
+            * Bed and breakfast
+            * Guest suite
+            * Cottage
+            * Townhouse
+            * Condominium
+            * Bungalow
+            * Serviced apartment
+            * Tiny house
+            * Castle
+            * Other
+            * Hostel
+            * Villa
+            * Camper/RV
+            * Tent
+            * Campsite
+        * Room types options are:
+            * Entire home/apt
+            * Private room
+            * Shared room
+
+    * Calendar
+        * Total rows = 1,646,515 
+        * The data set featured bookings from June 29, 2019 through June 27, 2020. 
+        * A categorical column with True/False values distinguished if the listing was reserved or not.
+   
+    * Reviews
+        * Total rows = 221,847
+        * Information included:
+            * Listing ID
+            * Date
+            * Reviewer ID
+            * Reviewer Name
+            * Comments
+
 
 Data Visualization
 ------
