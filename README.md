@@ -78,7 +78,8 @@ Exploration highlighted:
         * Entire home/apt
         * Private room
         * Shared room
-        |   |   |
+        |  Property Types |   |
+        | ----------------|---|
         | test | test |
         | test | test |
 
