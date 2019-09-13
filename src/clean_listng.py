@@ -1,7 +1,7 @@
 import numpy as np
 import pandas as pd
 
-def select_cols(df, cols):
+def select_cols(df, columns_to_keep):
     '''
     Returns pandas DataFrame with desired columns.
     

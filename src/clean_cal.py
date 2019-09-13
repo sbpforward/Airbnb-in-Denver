@@ -81,7 +81,7 @@ def update_col_name(df,cols):
         it ready for digging into!
 
     ''' 
-    df.columns = new_col
+    df.columns = cols
     return df
 
 def save(df):
