@@ -9,9 +9,9 @@ I have been an Airbnb host in Denver for the last year and half. It's been a gre
 + Similar to optimizing SEO on websites, do hosts pack in Denver's things-to-do every chance they get?
     * For example, I live in Sloan's Lake and two blocks from Mile High Stadium. That's included in both our listings, but I also let guests know we're a shared-ride away from RiNo, LoHi, Coors Field, 16th Street Mall, the Convention Center, etc. any where I can. 
 + There's a section called "Getting Around" on every listing where hosts can tell guests what kind transporation options are available around the area. What are hosts telling guests? More Uber mentions or Lyft? Are they proponents of the Light Rail? 
-+ What's the Airbnb utilization per neighborhood and learning how to map that visually?
++ What's the Airbnb utilization per neighborhood? And learning how to map that visually.
 
-But what started out to be a project to see how I could maximize and make more from my Airbnb listings quickly turned into ---something, some kind of detective work---- after finding out where the data came from and digging into the actual data myself. 
+But what started out to be a project to see how I could maximize and make the most from my Airbnb listings quickly turned into ---something, some kind of detective work---- after finding out where the data came from and digging into the actual data myself. 
 
 Data Description
 ------
@@ -33,13 +33,11 @@ Cox and another collaborator, Tom Slee, compiled [a comprehensive report](http:/
 + Transition from Jupyter Notebooks into using code editor, Visual Studio Code.
 + Cox stated in [this article from 2016](http://insideairbnb.com/nyc-the-war-against-commercial-listings-continues/) that "Airbnb's business model incentivizes commercial use, regardless of whether it is one host that permanently rents multiple homes, or many hosts that permanently rent one entire home." Is this still true and is it happening in Denver?
 + Finding hosts with multiple listings that could be in possible violation of Denver's short-term rental regulations & licensing.
-+ Making my code easily transferrable to the other cities Inside Airbnb features.
++ Making my code easily transferrable to the other cities *Inside Airbnb* features.
 
 Describing the Data
 ------
-Learn more about Denver's Short-Term Rental Regulations & Licensing [here](https://www.denvergov.org/content/denvergov/en/denver-business-licensing-center/business-licenses/short-term-rentals/short-term-rental-faq.html).
-
-The data for Denver and other cities can be found on [Inside Airbnb](http://insideairbnb.com/get-the-data.html). It seems to be updated every month or so. Data from previous months are archived and linked below the city's current shared data sets.
+The snapshot data for Denver and other cities can be found on [Inside Airbnb](http://insideairbnb.com/get-the-data.html). It seems to be updated every month or so. Data from previous months are archived and linked below the city's current data sets.
 
 I reviewed the following .CSV fles:
 + Listings
@@ -53,7 +51,7 @@ Exploration highlighted:
         * 25% - Private rooms
         * 2%  - Shared rooms
     * There's a designated section where hosts are to enter their license number. This is when I realized I put our license number in the wrong spot and quickly fixed our listings.
-    * A "neighbourhood_cleansed" column correctly converts the listing's neighbourhood to be representative of the city's neighbourhood boundaries.
+    * A *neighbourhood_cleansed* column correctly converts the listing's neighbourhood to be representative of the city's neighbourhood boundaries.
         * **Host entered**: LoDo (Lower Downtown) -> **Becomes**: Union Station
         * **Host entered**: RiNo (River North)    -> **Becomes**: Five Points
     * Property types could be:
@@ -84,7 +82,7 @@ Exploration highlighted:
 + **Calendar**
     * Total rows = 1,646,515 
     * The data set featured bookings from June 29, 2019 through June 27, 2020. 
-    * A categorical column with True/False values distinguished if the listing was reserved or not.
+    * A categorical column with True/False values distinguished if the listing was booked or not.
    
 + **Reviews**
     * Total rows = 221,847
@@ -97,23 +95,23 @@ Exploration highlighted:
 
 Data Visualization + Discovery
 ------
-I wanted to see what neighborhood in Denver had the most Airbnb listings to choose from. In Denver, that's Five Points. 
+First I wanted to see what neighborhood in Denver had the most Airbnb listings to choose from.  
  
 ![alt text](/images/top-10-neighborhoods-in-Denver-with-most-airbnb-listings.jpeg "Top 10 Denver Neighborhoods with the Most Airbnb Listings")
 ___
 
-My next question was: "Of these neighborhoods, what are the room types that are listed?"
+My next question: Of these neighborhoods, what are the room types that are listed?
 
 ![alt text](images/most-available-airbnb-listings-in-{city}-by-room-type.jpeg "Most Available Neighbourhoods in Denver & Room Type")
 ___
 
-I started to pull all of the information on "entire home/apt" listings in Five Points, but then I went down a few rabbit holes.
+I started to pull the information on "entire home/apt" listings in Five Points, but then I went down a few rabbit holes.
 
 **A few things to note about the City and County of Denver's short-term rental regulations**:
 + To host on Airbnb, you need to apply for a short-term-rental license that costs $25.
 + If you don’t own the house, you need the landlord or property owner’s approval.
 + Unit must be Licensee’s primary residence.
-    * Or else [this](https://www.denverpost.com/2019/06/11/denver-short-term-rental-airbnb-arrest/) or [this](https://www.denverpost.com/2019/09/04/airbnb-denver-short-term-rentals/) happens.
+    * Or else [this](https://www.denverpost.com/2019/06/11/denver-short-term-rental-airbnb-arrest/) and [this](https://www.denverpost.com/2019/09/04/airbnb-denver-short-term-rentals/) happens.
 + Licensee must list the unit’s STR license number on any online, print or other advertisements.
 + Accessory dwelling units (ADUs) can be used for STRs, but only one STR license can be granted per Primary Resident's property.
 
@@ -121,7 +119,7 @@ ___
 
 After combing through the calendar.CSV looking to see what columns to keep and update before merging into the listing.CSV, I came across a listing that has a maximum night availability of 1125 days. That's a little over 3 years.
 
-![alt text](/images/discovery_1488774_two_listings_doesn't_live_here.png "calendar discovery")
+![alt text](/images/discovery_1488774_two_listings_doesn't_live_here.png "Available up to 1125 days?!")
 
 Say "Hello!" to Heidi. I think she's new here. She has [two Airbnb listings](airbnb.com/users/show/7961490) in Denver, one in Whittier and the other in Five Points, that she rents from good ol' Pendleton, Indiana.
 
@@ -132,7 +130,7 @@ Future Directions
 I'm fully invested in finding out how to weed out the Airbnb hosts who are violating Denver's short-term rental agreement. Some things I need to consider are:
 + Making sure the listing is within the City and Count of Denver. I've come across a few listings in Lakewood and other areas that are not within Denver City Limits.
 + Finding out how likely an entire home/apt is to be violating the law. Just becuase a person is listing out their entire home does not mean they're not actually living there. Like [Julie](https://www.airbnb.com/users/show/1496) who offers a room in her house while also having the option to rent the *whole* house. 
-+ When running through the "license" column, double checking to see if they've entered their license number in another description on their listing. Like I did at first. Whoops.
++ When running through the "license" column, double checking to see if they've entered their license number in another description on their listing... like I did at first. 
 
 References
 ------
