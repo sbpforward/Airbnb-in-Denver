@@ -11,7 +11,7 @@ def get_top_10_neighbourhoods(df):
     The DataFrame is then placed in descending order and sliced to show only the top 
     10 neighbourhoods with the most total listings on Airbnb.
 
-    The room types options are:
+    The room type options are:
     =============
     Entire home/apt
     Private room
