@@ -3,11 +3,32 @@ import pandas as pd
 
 def select_cols(df, cols):
     '''
-    Returns df with specified columns
+    Returns pandas DataFrame with desired columns.
     
-    ARGS:
-        df - pd.dataFrame
-        cols - list of columns
+    Parameters
+    ----------
+    df: pandas.DataFrame
+        DataFrame produced by the listings.csv file.
+    cols: array_like
+        List of columns to keep
+        =============
+        id                          latitude                    space
+        host_id                     longitude                   description
+        host_listings_count         minimum_nights              transit 
+        neighbourhood               maximum_nights              access
+        neighbourhood_cleansed      minimum_nights_avg_ntm      interaction
+        property_type               maximum_nights_avg_ntm      host_url
+        room_type                   requires_license            listing_url
+        price                       license
+        weekly_price                name
+        monthly_price               summary
+        =============
+
+    Returns
+    ----------
+    df: pandas.DataFrame
+        DataFrame that consists only of the columns passed through.
+
     '''
     columns_to_drop = []
     for x in df.columns:
@@ -19,14 +40,28 @@ def select_cols(df, cols):
 
 def to_float(df, cols):
     '''
-    Converts specified columns to float type
+    Converts specifified column to float type.
 
-    ARGS
-        df = DataFrame
-        cols = list of column names
+    Parameters
+    ----------
+    df: pandas.DataFrame
+        Passes the DataFrame that was recently updated to have the
+        desired columns.
 
-    RETURN
-        df
+    cols: array_like
+        List of strings of the column names that need to be 
+        converted to float.
+        =============
+        price
+        weekly_price
+        monthly_price
+        =============
+
+    Returns
+    ----------
+    df: pandas.DataFrame
+        Updated DataFrame that updates the 'price' column datatype from a
+        string to a float datatype.
     '''
     for c in cols:
         df[c] = df[c].replace({'\$':'', ',':''}, regex = True).astype(float)
@@ -43,9 +78,9 @@ if __name__ == '__main__':
                         'longitude','minimum_nights','maximum_nights','minimum_nights_avg_ntm',
                         'maximum_nights_avg_ntm','requires_license','license','name','summary','space',
                         'description','transit','access','interaction','host_url','listing_url']
-    numeric_cols = ['price','weekly_price','monthly_price']
+    float_cols = ['price','weekly_price','monthly_price']
 
     df = select_cols(df, columns_to_keep)
-    df = to_float(df, numeric_cols)
+    df = to_float(df, float_cols)
     
     save(df)
