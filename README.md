@@ -40,12 +40,12 @@ Describing the Data
 You can find the data for Denver and other cities on [Inside Airbnb](http://insideairbnb.com/get-the-data.html). It appears to be updated every month or so. Data from previous months are archived and linked below the city's current shared data sets.
 
 I downloaded the follow three .CSV fles:
-    + Listings
-    + Calendar
-    + Reviews
++ Listings
++ Calendar
++ Reviews
 
 Exploration highlighted:
-    * Listings
+    + Listings
         * There are 4,511 total Airbnb listings in Denver across 78 neighbourhoods.
             * 73% - Entire Home/Apt
             * 25% - Private rooms
@@ -79,12 +79,12 @@ Exploration highlighted:
             * Private room
             * Shared room
 
-    * Calendar
+    + Calendar
         * Total rows = 1,646,515 
         * The data set featured bookings from June 29, 2019 through June 27, 2020. 
         * A categorical column with True/False values distinguished if the listing was reserved or not.
    
-    * Reviews
+    + Reviews
         * Total rows = 221,847
         * Information included:
             * Listing ID
