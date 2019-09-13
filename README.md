@@ -107,7 +107,7 @@ My next question was: "Of these neighborhoods, what are the room types that are 
 ![alt text](images/most-available-airbnb-listings-in-{city}-by-room-type.jpeg "Most Available Neighbourhoods in Denver & Room Type")
 ___
 
-I started to pull all of the information for the "entire home/apt" listings in Five Points, but then I went down a few rabbit holes.
+I started to pull all of the information on "entire home/apt" listings in Five Points, but then I went down a few rabbit holes.
 
 **A few things to note about the City and County of Denver's short-term rental regulations**:
 + To host on Airbnb, you need to apply for a short-term-rental license that costs $25.
@@ -116,6 +116,15 @@ I started to pull all of the information for the "entire home/apt" listings in F
     * Or else [this](https://www.denverpost.com/2019/06/11/denver-short-term-rental-airbnb-arrest/) or [this](https://www.denverpost.com/2019/09/04/airbnb-denver-short-term-rentals/) happens.
 + Licensee must list the unit’s STR license number on any online, print or other advertisements.
 + Accessory dwelling units (ADUs) can be used for STRs, but only one STR license can be granted per Primary Resident's property.
+
+After combing through the calendar.CSV looking to see what columns to keep, I came across a listing that has a maximum night availability of 1125 days. That's a little over 3 years.
+
+![alt text](/images/discovery_1488774_two_listings_doesn't_live_here.png "calendar discovery")
+
+Say "Hello!" to Heidi. She has [two Airbnb listings](airbnb.com/users/show/7961490) in Denver, one in Whittier and the other in Five Points, that she rents out while hanging out in Pendleton, Indiana.
+
+![alt text](images/airbnb_host_heidi.png "Hello Heidi!")
+
 
 
 
