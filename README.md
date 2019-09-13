@@ -52,7 +52,7 @@ Exploration highlighted:
         * 2%  - Shared rooms
     * Of the 106 columns, these are the 27 I decided to keep:
 
-``` 
+```python
 def select_cols(df, columns_to_keep):
     '''
     Returns pandas DataFrame with desired columns.
@@ -90,34 +90,34 @@ def select_cols(df, columns_to_keep):
     return df
 ```
 
-    * There's a designated section where hosts are to enter their license number. This is when I realized I put our license number in the wrong spot and quickly fixed our listings.
-    * A *neighbourhood_cleansed* column correctly converts the listing's neighbourhood to be representative of the city's neighbourhood boundaries.
-        * **Host entered**: LoDo (Lower Downtown) -> **Becomes**: Union Station
-        * **Host entered**: RiNo (River North)    -> **Becomes**: Five Points
-    * Property types could be:
-        * Guesthouse
-        * Loft 
-        * House
-        * Apartment
-        * Bed and breakfast
-        * Guest suite
-        * Cottage
-        * Townhouse
-        * Condominium
-        * Bungalow
-        * Serviced apartment
-        * Tiny house
-        * Castle
-        * Other
-        * Hostel
-        * Villa
-        * Camper/RV
-        * Tent
-        * Campsite
-    * Room type options are:
-        * Entire home/apt
-        * Private room
-        * Shared room
+* There's a designated section where hosts are to enter their license number. This is when I realized I put our license number in the wrong spot and quickly fixed our listings.
+* A *neighbourhood_cleansed* column correctly converts the listing's neighbourhood to be representative of the city's neighbourhood boundaries.
+    * **Host entered**: LoDo (Lower Downtown) -> **Becomes**: Union Station
+    * **Host entered**: RiNo (River North)    -> **Becomes**: Five Points
+* Property types could be:
+    * Guesthouse
+    * Loft 
+    * House
+    * Apartment
+    * Bed and breakfast
+    * Guest suite
+    * Cottage
+    * Townhouse
+    * Condominium
+    * Bungalow
+    * Serviced apartment
+    * Tiny house
+    * Castle
+    * Other
+    * Hostel
+    * Villa
+    * Camper/RV
+    * Tent
+    * Campsite
+* Room type options are:
+    * Entire home/apt
+    * Private room
+    * Shared room
 
 + **Calendar**
     * Total rows = 1,646,515 
