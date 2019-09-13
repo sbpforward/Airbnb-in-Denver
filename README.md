@@ -51,6 +51,7 @@ Exploration highlighted:
         * 25% - Private rooms
         * 2%  - Shared rooms
     * Of the 106 columns, these are the 27 I decided to keep:
+
 ``` 
 def select_cols(df, columns_to_keep):
     '''
@@ -87,7 +88,7 @@ def select_cols(df, columns_to_keep):
             columns_to_drop.append(x)
     df.drop(columns_to_drop, inplace=True, axis=1)
     return df
-``` 
+```
 
     * There's a designated section where hosts are to enter their license number. This is when I realized I put our license number in the wrong spot and quickly fixed our listings.
     * A *neighbourhood_cleansed* column correctly converts the listing's neighbourhood to be representative of the city's neighbourhood boundaries.
