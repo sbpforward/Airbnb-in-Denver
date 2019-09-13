@@ -100,10 +100,25 @@ Data Visualization + Discovery
 I wanted to see what neighborhood in Denver had the most Airbnb listings to choose from. In Denver, that's Five Points. 
  
 ![alt text](/images/top-10-neighborhoods-in-Denver-with-most-airbnb-listings.jpeg "Top 10 Denver Neighborhoods with the Most Airbnb Listings")
+___
 
 My next question was: "Of these neighborhoods, what are the room types that are listed?"
 
 ![alt text](images/most-available-airbnb-listings-in-{city}-by-room-type.jpeg "Most Available Neighbourhoods in Denver & Room Type")
+___
+
+I started to pull all of the information for the "entire home/apt" listings in Five Points, but then I went down a few rabbit holes.
+
+**A few things to note about the City and County of Denver's short-term rental regulations**:
++ To host on Airbnb, you need to apply for a short-term-rental license that costs $25.
++ If you don’t own the house, you need the landlord or property owner’s approval.
++ Unit must be Licensee’s primary residence.
+    * Or else [this](https://www.denverpost.com/2019/06/11/denver-short-term-rental-airbnb-arrest/) or [this](https://www.denverpost.com/2019/09/04/airbnb-denver-short-term-rentals/) happens.
++ Licensee must list the unit’s STR license number on any online, print or other advertisements.
++ Accessory dwelling units (ADUs) can be used for STRs, but only one STR license can be granted per Primary Resident's property.
+
+
+
 
 Future Directions
 ------
