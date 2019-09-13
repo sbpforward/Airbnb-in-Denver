@@ -6,20 +6,31 @@ Background
 I have been an Airbnb host in Denver for the last year and half. It's been a great source of mostly passive income and about 95% of our guests are pretty easy going. When I first discovered the data, I was interested in finding out:
 + Does the listing description and length increase number of bookings? 
 + What's the ratio of Superhosts to total Airbnb listings in Denver? 
-+ Similar to optimizing SEO, do host's pack in Denver's things-to-do every chance they get?
-    * For example, I live in Sloan's Lake and two blocks from Mile High Stadium. That's included, but I also let guests know we're a shared-ride away from RiNo, LoHi, Coors Field, 16th Street Mall, the Convention Center etc.
++ Similar to optimizing SEO on websites, do host's pack in Denver's things-to-do every chance they get?
+    * For example, I live in Sloan's Lake and two blocks from Mile High Stadium. That's included in both our listings, but I also let guests know we're a shared-ride away from RiNo, LoHi, Coors Field, 16th Street Mall, the Convention Center, etc. any where I can. 
 + There's a section called "Getting Around" on every listing where host's can tell guests what kind transporation options are available around the area. What are host's telling guests? More Uber mentions or Lyft? Are they proponents of the Light Rail? 
++ What's the Airbnb utilization per neighborhood and learning how to map that visually?
 
-However, what started out to be a project to see how I could maximize and make more from my Airbnb listings quickly turned into fulfilling a childhood dream of become a real life "Harriet the Spy" after digging more into the data.
+But what started out to be a project to see how I could maximize and make more from my Airbnb listings quickly turned into ---something, some kind of detective work---- after finding out where the data came from and digging into the actual data myself. 
 
 Data Description
 ------
-Ow now brown cow.
+Murray Cox is an Austrailian-native-turned-New-York-transplant who runs [Inside Airbnb](http://insideairbnb.com/about.html) - "an independent, non-commercial set of tools and data that allows you to explore how Airbnb is really being used in cities around the world."
 
-Capstone 1 Goals
+He's been scraping publicly available data on Airbnb from more than 100 cities around the world. You can get listings, calendar dates and availibility, and reviews for cities like Amsterdam, Barcelona, Cape Town, Hong Kong, and, of course, Denver. 
+
+He considers himself a "housing activist" but the media has dubbed him “Airbnb’s global public enemy No. 1" after publishing his first report in 2016 describing in detail how Airbnb and it's hosts were violating New York state law. New York's dwelling law at the time stated that "an apartment with three or more units cannot be rented out for under 30 days unless there's a permanent occupant present." So, if one host is listing multiple apartments - they couldn't possibly be living in *all of them*.  
+
+In December 2015, [Airbnb released a report](https://www.nytimes.com/2015/12/02/technology/airbnb-releases-trove-of-new-york-city-home-sharing-data.html?module=inline) around its presence in New York City in an effort to be more transparent. ---That backfired just two months later. How do I say this better?---
+
+It turns out Cox would regularly update his numbers from as early as 2014. When comparing his data to that of Airbnb's he noticed that there were large chunks of listings missing just before Airbnb released their report. More specifically, it was missing listings that featured Airbnb hosts who were listing multiple apartments and in clear violation of New York's dwelling law. 
+
+Cox and another collaborator, Tom Slee, compiled [a comprehensive report](http://insideairbnb.com/reports/how-airbnbs-data-hid-the-facts-in-new-york-city.pdf) calling out Airbnb for trying to sweep the known violations under the rug. Naturally, Airbnb tried to deny the claims saying that it was "a natural fluctuation — a comedown off of the frenzy of the New York City marathon and Halloween weekend." It was until two weeks later that Airbnb sent a letter to New York state legislators and users admitting that the report was true. 
+
+(New) Capstone 1 Goals
 ------
-+ Become more comfortable using pandas and sifting through large data.
-+ 
++ Getting more comfortable using pandas and sifting through large data.
++ Transition from Jupyter Notebooks to 
 
 Describing the Data
 ------
@@ -35,6 +46,8 @@ Ow now brown cow.
 
 References
 ------
-Ow now brown cow.
+Last, F. M. (Year, Month Date Published). Article title. Retrieved from URL
 
+Carville, Olivia. (2019, March) *Meet Murray Cox, The Man Trying to Take Down Airbnb.* https://www.bloomberg.com/news/articles/2019-05-23/meet-murray-cox-airbnb-s-public-enemy-no-1-in-new-york
 
+Katz, Miranda. (2018, February). *A Lone Data Whiz Is Fighting Airbnb — and Winning.* https://www.wired.com/2017/02/a-lone-data-whiz-is-fighting-airbnb-and-winning/
