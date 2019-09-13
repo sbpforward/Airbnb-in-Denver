@@ -6,9 +6,9 @@ Background
 I have been an Airbnb host in Denver for the last year and half. It's been a great source of mostly passive income and about 95% of our guests are pretty easy going. When I first discovered the data, I was interested in finding out:
 + Does the listing description and length increase number of bookings? 
 + What's the ratio of Superhosts to total Airbnb listings in Denver? 
-+ Similar to optimizing SEO on websites, do host's pack in Denver's things-to-do every chance they get?
++ Similar to optimizing SEO on websites, do hosts pack in Denver's things-to-do every chance they get?
     * For example, I live in Sloan's Lake and two blocks from Mile High Stadium. That's included in both our listings, but I also let guests know we're a shared-ride away from RiNo, LoHi, Coors Field, 16th Street Mall, the Convention Center, etc. any where I can. 
-+ There's a section called "Getting Around" on every listing where host's can tell guests what kind transporation options are available around the area. What are host's telling guests? More Uber mentions or Lyft? Are they proponents of the Light Rail? 
++ There's a section called "Getting Around" on every listing where hosts can tell guests what kind transporation options are available around the area. What are hosts telling guests? More Uber mentions or Lyft? Are they proponents of the Light Rail? 
 + What's the Airbnb utilization per neighborhood and learning how to map that visually?
 
 But what started out to be a project to see how I could maximize and make more from my Airbnb listings quickly turned into ---something, some kind of detective work---- after finding out where the data came from and digging into the actual data myself. 
@@ -30,7 +30,10 @@ Cox and another collaborator, Tom Slee, compiled [a comprehensive report](http:/
 (New) Capstone 1 Goals
 ------
 + Getting more comfortable using pandas and sifting through large data.
-+ Transition from Jupyter Notebooks to 
++ Transition from Jupyter Notebooks into using code editor, Visual Studio Code.
++ Cox stated in [this article from 2016](http://insideairbnb.com/nyc-the-war-against-commercial-listings-continues/) that "Airbnb's business model incentivizes commercial use, regardless of whether it is one host that permanently rents multiple homes, or many hosts that permanently rent one entire home." Is this still true and is it happening in Denver?
++ Finding hosts with multiple listings that could be in possible violation of Denver's short-term-rental regulations & licensing.
++ Making my code easily transferrable to the other cities Inside Airbnb features.
 
 Describing the Data
 ------
