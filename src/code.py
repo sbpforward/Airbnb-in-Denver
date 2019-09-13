@@ -161,7 +161,7 @@ def plot_top_10_neighbourhoods_and_room_type(df_top_10_neighbourhoods_and_room_t
 def get_single_neighbourhood_with_most_listings_entire_home_apt(df, df_top_10_neighbourhood, room_type='Entire home/apt'):
     '''
     Creates a new DataFrame consisting of all the of information about the number one neighbourhood with the largest sum 
-    total of Airbnb listings. A temporary variable (neighbourhood_with_most_listings) stores the number one neighborhood. It
+    total of Airbnb listings. A temporary variable (neighbourhood_with_most_listings) stores the number one neighbourhood. It
     is used later to mask through the original DataFrame also pulling only those listings that offer the "Entire home/apt".
 
     Parameters
@@ -176,7 +176,7 @@ def get_single_neighbourhood_with_most_listings_entire_home_apt(df, df_top_10_ne
     Returns
     ----------
     df: pandas.DataFrame
-        A df_number_one_neighbourhood_entire_home_apt consisting of the all the information about the number one neighborhood
+        A df_number_one_neighbourhood_entire_home_apt consisting of the all the information about the number one neighbourhood
         with the largest sum total of Airbnb listings that offer the "Entire home/apt".
     '''
     df_number_one_neighbourhood_entire_home_apt = pd.DataFrame()
@@ -199,7 +199,7 @@ def get_single_neighbourhood_with_most_listings_to_list(df_number_one_neighbourh
     Returns
     ----------
     list: list of integers
-        The 'single_neighbourhood_with_most_listings_lst' consisting of listing ID's for the number one neighborhood with the 
+        The 'single_neighbourhood_with_most_listings_lst' consisting of listing ID's for the number one neighbourhood with the 
         largest sum total of Airbnb listings per neighbourhood.   
     '''
     single_neighbourhood_with_most_listings_lst = df_number_one_neighbourhood_entire_home_apt['id'].tolist()
