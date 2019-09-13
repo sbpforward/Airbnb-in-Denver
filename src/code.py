@@ -12,7 +12,7 @@ def get_top_10_neighbourhoods(df):
     10 neighbourhoods with the most total listings on Airbnb.
 
     The room type options are:
-    =============
+    ============= 
     Entire home/apt
     Private room
     Shared room
