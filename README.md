@@ -32,14 +32,16 @@ Cox and another collaborator, Tom Slee, compiled [a comprehensive report](http:/
 + Getting more comfortable using pandas and sifting through large data.
 + Transition from Jupyter Notebooks into using code editor, Visual Studio Code.
 + Cox stated in [this article from 2016](http://insideairbnb.com/nyc-the-war-against-commercial-listings-continues/) that "Airbnb's business model incentivizes commercial use, regardless of whether it is one host that permanently rents multiple homes, or many hosts that permanently rent one entire home." Is this still true and is it happening in Denver?
-+ Finding hosts with multiple listings that could be in possible violation of Denver's short-term-rental regulations & licensing.
++ Finding hosts with multiple listings that could be in possible violation of Denver's short-term rental regulations & licensing.
 + Making my code easily transferrable to the other cities Inside Airbnb features.
 
 Describing the Data
 ------
-You can find the data for Denver and other cities on [Inside Airbnb](http://insideairbnb.com/get-the-data.html). It appears to be updated every month or so. Data from previous months are archived and linked below the city's current shared data sets.
+Learn more about Denver's Short-Term Rental Regulations & Licensing [here](https://www.denvergov.org/content/denvergov/en/denver-business-licensing-center/business-licenses/short-term-rentals/short-term-rental-faq.html).
 
-I downloaded the follow three .CSV fles:
+The data for Denver and other cities can be found on [Inside Airbnb](http://insideairbnb.com/get-the-data.html). It seems to be updated every month or so. Data from previous months are archived and linked below the city's current shared data sets.
+
+I reviewed the following .CSV fles:
 + Listings
 + Calendar
 + Reviews
@@ -52,8 +54,8 @@ Exploration highlighted:
         * 2%  - Shared rooms
     * There's a designated section where hosts are to enter their license number. This is when I realized I put our license number in the wrong spot and quickly fixed our listings.
     * A "neighbourhood_cleansed" column correctly converts the listing's neighbourhood to be representative of the city's neighbourhood boundaries.
-        * Host entered: LoDo (Lower Downtown) -> Becomes: Union Station
-        * Host entered: RiNo (River North)    -> Becomes: Five Points
+        * **Host entered**: LoDo (Lower Downtown) -> **Becomes**: Union Station
+        * **Host entered**: RiNo (River North)    -> **Becomes**: Five Points
     * Property types could be:
         * Guesthouse
         * Loft 
@@ -78,11 +80,6 @@ Exploration highlighted:
         * Entire home/apt
         * Private room
         * Shared room
-        |  Property Types |   |
-        | ----------------|---|
-        | test | test |
-        | test | test |
-
 
 + **Calendar**
     * Total rows = 1,646,515 
@@ -98,10 +95,15 @@ Exploration highlighted:
         * Reviewer Name
         * Comments
 
-
-Data Visualization
+Data Visualization + Discovery
 ------
-Ow now brown cow.
+I wanted to see what neighborhood in Denver had the most Airbnb listings to choose from. In Denver, that's Five Points. 
+ 
+![alt text](images/top-10-neighborhoods-in-Denver-with-most-airbnb-listings.jpeg "Top 10 Denver Neighborhoods with the Most Airbnb Listings)
+
+My next question was: "Of these neighborhoods, what are the room types that are listed?"
+
+![alt text](images/most-available-airbnb-listings-in-{city}-by-room-type.jpeg "Most Available Neighbourhoods in Denver & Room Type)
 
 Future Directions
 ------
@@ -109,8 +111,6 @@ Ow now brown cow.
 
 References
 ------
-Last, F. M. (Year, Month Date Published). Article title. Retrieved from URL
-
 Carville, Olivia. (2019, March) *Meet Murray Cox, The Man Trying to Take Down Airbnb.* https://www.bloomberg.com/news/articles/2019-05-23/meet-murray-cox-airbnb-s-public-enemy-no-1-in-new-york
 
 Katz, Miranda. (2018, February). *A Lone Data Whiz Is Fighting Airbnb — and Winning.* https://www.wired.com/2017/02/a-lone-data-whiz-is-fighting-airbnb-and-winning/
