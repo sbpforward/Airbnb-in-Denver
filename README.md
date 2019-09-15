@@ -53,15 +53,6 @@ Exploration highlighted:
     * Of the 106 columns, these are the 27 I decided to keep:
 
 ```python
-def select_cols(df, columns_to_keep):
-    '''
-    Returns pandas DataFrame with desired columns.
-    
-    Parameters
-    ----------
-    df: pandas.DataFrame
-        DataFrame produced by the listings.csv file.
-    cols: list
         List of columns to keep
         =============
         id                          latitude                    space
@@ -75,19 +66,6 @@ def select_cols(df, columns_to_keep):
         weekly_price                name
         monthly_price               summary
         =============
-
-    Returns
-    ----------
-    df: pandas.DataFrame
-        DataFrame that consists only of the columns passed through.
-
-    '''
-    columns_to_drop = []
-    for x in df.columns:
-        if x not in columns_to_keep:
-            columns_to_drop.append(x)
-    df.drop(columns_to_drop, inplace=True, axis=1)
-    return df
 ```
 
 * There's a designated section where hosts are to enter their license number. This is when I realized I put our license number in the wrong spot and quickly fixed our listings.
