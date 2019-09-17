@@ -147,7 +147,7 @@ Future Directions
 ------
 I'm fully invested in finding out how to weed out the Airbnb hosts who are violating Denver's short-term rental agreement. Some things I need to consider are:
 + Making sure the listing is within the City and County of Denver. I've come across a few listings in Lakewood and other areas that are not within Denver City Limits.
-+ Finding out how likely an entire home/apt is to be violating the law. Just becuase a person is listing out their entire home does not mean they're not actually living there. Like [Julie](https://www.airbnb.com/users/show/1496) who offers a room in her house while also having the option to rent the *whole* house. 
++ Finding out how likely an entire home/apt is to be violating the law. Just because a person is listing out their entire home does not mean they're not actually living there. Like [Julie](https://www.airbnb.com/users/show/1496) who offers a room in her house while also having the option to rent the *whole* house. 
 + When running through the "license" column, double checking to see if they've entered their license number in another description on their listing... like I did at first. 
 
 References
