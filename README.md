@@ -8,7 +8,7 @@ I have been an Airbnb host in Denver for the last year and half. It's been a gre
 + What's the ratio of Superhosts to total Airbnb listings in Denver? 
 + Similar to optimizing SEO on websites, do hosts pack in Denver's things-to-do every chance they get?
     * For example, I live in Sloan's Lake and two blocks from Mile High Stadium. That's included in both our listings, but I also let guests know we're a shared-ride away from RiNo, LoHi, Coors Field, 16th Street Mall, the Convention Center, etc. any where I can. 
-+ There's a section called "Getting Around" on every listing where hosts can tell guests what kind transporation options are available around the area. What are hosts telling guests? More Uber mentions or Lyft? Are they proponents of the Light Rail? 
++ There's a section called "Getting Around" on every listing where hosts can tell guests what kind transportation options are available around the area. What are hosts telling guests? More Uber mentions or Lyft? Are they proponents of the Light Rail? 
 + What's the Airbnb utilization per neighborhood? And learning how to map that visually.
 
 But what started out to be a project to see how I could maximize and make the most from my Airbnb listings quickly turned into a compliance investigation after finding out where the data came from and digging into the actual data myself. 
@@ -17,9 +17,9 @@ Data Description
 ------
 Murray Cox is an Austrailian-native-turned-New-York-transplant who runs [Inside Airbnb](http://insideairbnb.com/about.html) - "an independent, non-commercial set of tools and data that allows you to explore how Airbnb is really being used in cities around the world."
 
-He's been scraping publicly available data on Airbnb from more than 100 cities around the world. You can get listings, calendar dates and availibility, and reviews for cities like Amsterdam, Barcelona, Cape Town, Hong Kong, and, of course, Denver. 
+He's been scraping publicly available data on Airbnb from more than 100 cities around the world. You can get listings, calendar dates and availability, and reviews for cities like Amsterdam, Barcelona, Cape Town, Hong Kong, and, of course, Denver. 
 
-He considers himself a "housing activist" but the media has dubbed him “Airbnb’s global public enemy No. 1" after publishing his first report in 2016 describing in detail how Airbnb and it's hosts were violating New York state law. New York's dwelling law at the time stated that "an apartment with three or more units cannot be rented out for under 30 days unless there's a permanent occupant present." So, if one host is listing multiple apartments - they couldn't possibly be living in *all of them*.  
+He considers himself a "housing activist" but the media has dubbed him “Airbnb’s global public enemy No. 1" after publishing his first report in 2016 describing in detail how Airbnb and its hosts were violating New York state law. New York's dwelling law at the time stated that "an apartment with three or more units cannot be rented out for under 30 days unless there's a permanent occupant present." So, if one host is listing multiple apartments - they couldn't possibly be living in *all of them*.  
 
 In December 2015, [Airbnb released a report](https://www.nytimes.com/2015/12/02/technology/airbnb-releases-trove-of-new-york-city-home-sharing-data.html?module=inline) around its presence in New York City in an effort to be more transparent. And that backfired just two months later.
 
@@ -39,7 +39,7 @@ Describing the Data
 ------
 The snapshot data for Denver and other cities can be found on [Inside Airbnb](http://insideairbnb.com/get-the-data.html). It seems to be updated every month or so. Data from previous months are archived and linked below the city's current data sets.
 
-I reviewed the following .CSV fles:
+I reviewed the following .CSV files:
 + Listings
 + Calendar
 + Reviews
